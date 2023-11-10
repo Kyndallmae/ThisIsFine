@@ -359,7 +359,7 @@ body {
   font-family: Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
     'Segoe UI Symbol';
   font-size: 16px;
-  color: #1a1a1a;
+  color: #2d3333;
 }
 
 h1,
@@ -422,12 +422,12 @@ button {
 }
 
 a {
-  color: #7faeb9;
+  color: #2d3333;
   text-decoration: none;
 }
 
 a:hover {
-  color: #385b64;
+  color: #2d3333;
   text-decoration: underline;
 }
 
@@ -882,11 +882,11 @@ a:hover {
 }
 
 .text-primary {
-  color: #fdf4e7 !important;
+  color: #2d3333 !important;
 }
 
 .text-info {
-  color: #fdf4e7 !important;
+  color: #2d3333!important;
 }
 
 .text-danger {
@@ -894,11 +894,11 @@ a:hover {
 }
 
 .text-default {
-  color: #fdf4e7 !important;
+  color: #2d3333 !important;
 }
 
 .text-light {
-  color: #ffffff !important;
+  color: #fdf4e7 !important;
 }
 
 .text-dark {
@@ -919,11 +919,11 @@ a:hover {
 
 /* BACKGROUND UTILS */
 .bg-primary {
-  background-color: #385b64 !important;
+  background-color: #9fcdda !important;
 }
 
 .bg-info {
-  background-color: #547782 !important;
+  background-color: #9fcdda !important;
 }
 
 .bg-danger {
@@ -931,11 +931,11 @@ a:hover {
 }
 
 .bg-light {
-  background-color: #fdf4e7 !important;
+  background-color: #9fcdda !important;
 }
 
 .bg-dark {
-  background-color: #2d3333 !important;
+  background-color: #9fcdda !important;
 }
 
 .bg-white {
@@ -947,7 +947,7 @@ a:hover {
 }
 
 .bg-link {
-  background-color: #c96000 !important;
+  background-color: #9fcdda !important;
 }
 
 /* DISPLAY */
@@ -982,7 +982,7 @@ a:hover {
   border: 1px solid transparent;
   outline: none;
   color: #2d3333;
-  background-color: #d9f4fa;
+  background-color: #9fcdda;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
@@ -1083,13 +1083,13 @@ a:hover {
 }
 
 .card {
-  border: 1px solid #1a1a1a;
+  border: 1px solid #2d3333;
   margin-bottom: 1rem;
 }
 
 .card .card-header {
   padding: 0.375rem;
-  background-color: #2d3e50;
+  background-color: #9fcdda;
   color: #d9e9e8;
 }
 
@@ -1098,7 +1098,7 @@ a:hover {
 }
 
 .card .card-footer {
-  border-top: 1px solid #1a1a1a;
+  border-top: 1px solid #2d3333;
   padding: 0.375rem;
 }
 
