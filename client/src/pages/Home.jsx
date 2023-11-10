@@ -34,3 +34,29 @@ const Home = () => {
 };
 
 export default Home;
+
+
+
+
+import  React from 'react';
+import './style.css'; // You can create a separate CSS file for styling
+
+
+
+const stylecss = () => {
+  return (
+<div className="container">
+<div className="column">
+  {/* Content for the first column */}
+  <p>Column 1 Content</p>
+</div>
+<div className="column">
+  {/* Content for the second column */}
+  <p>Column 2 Content</p>
+</div>
+</div>
+  );
+};
+
+
+
