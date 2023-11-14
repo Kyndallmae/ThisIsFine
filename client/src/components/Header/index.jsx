@@ -12,14 +12,15 @@ const Header = () => {
     <header className="bg-primary text-primary mb-4 py-3 flex-row align-center">
       <div className="container flex-row justify-space-between-lg justify-center align-center">
         <div>
-<<<<<<< HEAD
           <img src={thisIsFine}></img>
         </div>
         <div>
           <Link className="text-light" to="/">
-=======
+
           <Link className="text-primary" to="/">
->>>>>>> 9bb1fc20159faef2cdd47f99b477db56be9d5bed
+
+            <h1 className="m-0 text-danger">This Is Fine</h1>
+
             <h1 className="m-0">This Is Fine</h1>
           </Link>
           <p className="m-0">An emergency preparedness guide for when things are not so fine!
@@ -37,10 +38,10 @@ const Header = () => {
             </>
           ) : (
             <>
-              <Link className="btn btn-lg btn-inf m-2" to="/tornado">
+              <Link className="btn btn-lg btn-light m-2 text-danger" to="/tornado">
                 Tornados
               </Link>
-              <Link className="btn btn-lg btn-light m-2" to="/hurricain">
+              <Link className="btn btn-lg btn-light m-2 text-danger" to="/hurricain">
                 Hurricains
               </Link>
             </>
