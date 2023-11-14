@@ -6,7 +6,7 @@ import { ADD_USER } from '../utils/mutations';
 
 import Auth from '../utils/auth';
 
-const Hurricain = () => {
+const Hurricane = () => {
   const [formState, setFormState] = useState({
     username: '',
     email: '',
@@ -76,7 +76,7 @@ const Hurricain = () => {
                   onChange={handleChange}
                 />
                 <button
-                  className="btn btn-block btn-primary"
+                  className="btn btn-block btn-primary bg-dark text-white"
                   style={{ cursor: 'pointer' }}
                   type="submit"
                 >
@@ -97,4 +97,4 @@ const Hurricain = () => {
   );
 };
 
-export default Hurricain;
+export default Hurricane;
