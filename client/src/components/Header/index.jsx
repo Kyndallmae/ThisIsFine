@@ -35,7 +35,7 @@ const Header = () => {
             </>
           ) : (
             <>
-              <Link className="btn btn-lg btn-inf m-2" to="/tornado">
+              <Link className="btn btn-lg btn-light m-2 text-danger" to="/tornado">
                 Tornados
               </Link>
               <Link className="btn btn-lg btn-light m-2" to="/Hurricane">
