@@ -41,7 +41,7 @@ const Header = () => {
               <Link className="btn btn-lg btn-light m-2 text-danger" to="/tornado">
                 Tornados
               </Link>
-              <Link className="btn btn-lg btn-light m-2 text-danger" to="/hurricain">
+              <Link className="btn btn-lg btn-light m-2 text-danger" to="/hurricane">
                 Hurricanes
               </Link>
             </>
