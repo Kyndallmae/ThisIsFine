@@ -91,7 +91,7 @@ const ThoughtForm = () => {
       ) : (
         <p>
           Or search weather in your local area! Please {' '}
-          <Link to="/login">login</Link> or <Link to="/signup">sign up</Link> to comment
+          <Link to="/tornado">login</Link> or <Link to="/hurricain">sign up</Link> to comment
         </p>
       )}
     </div>
