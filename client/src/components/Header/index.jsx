@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 
 import Auth from '../../utils/auth';
+import thisIsFine from '../../assets/images/thisisfine.jpeg'
 
 const Header = () => {
   const logout = (event) => {
@@ -11,7 +12,14 @@ const Header = () => {
     <header className="bg-primary text-primary mb-4 py-3 flex-row align-center">
       <div className="container flex-row justify-space-between-lg justify-center align-center">
         <div>
+<<<<<<< HEAD
+          <img src={thisIsFine}></img>
+        </div>
+        <div>
+          <Link className="text-light" to="/">
+=======
           <Link className="text-primary" to="/">
+>>>>>>> 9bb1fc20159faef2cdd47f99b477db56be9d5bed
             <h1 className="m-0">This Is Fine</h1>
           </Link>
           <p className="m-0">An emergency preparedness guide for when things are not so fine!
