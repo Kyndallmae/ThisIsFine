@@ -15,7 +15,7 @@ const Header = () => {
           <img src={thisIsFine}></img>
         </div>
         <div>
-          <Link className="text-light" to="/">
+          <Link className="text-light" to="/"></Link> 
 
           <Link className="text-primary" to="/">
 
