@@ -12,6 +12,20 @@
   /* 2 */
 }
 
+.container {
+  display: flex; /* Use Flexbox to create a two-column layout */
+  justify-content: space-between; /* Space between the columns */
+}
+
+.column {
+  width: 48%; /* Adjust the width as needed */
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 5px;
+}
+
+
+
 /* Sections
    ========================================================================== */
 /**
@@ -25,7 +39,7 @@ body {
  * Render the `main` element consistently in IE.
  */
 main {
-  display: block;
+  display: flex;
 }
 
 /**
@@ -57,7 +71,7 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
+  font-family: Helvetica, sans-serif, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -100,7 +114,7 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
+  font-family: Helvetica, sans-serif, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -356,11 +370,10 @@ body {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+  font-family: Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
     'Segoe UI Symbol';
   font-size: 16px;
-  color: #1a1a1a;
+  color: #fdf4e7;
 }
 
 h1,
@@ -369,7 +382,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'helvetica', monospace;
   margin: 0 0 0.5rem;
   line-height: 1.25;
 }
@@ -423,12 +436,12 @@ button {
 }
 
 a {
-  color: #1b89bc;
+  color: #2d3333;
   text-decoration: none;
 }
 
 a:hover {
-  color: #065b83;
+  color: #2d3333;
   text-decoration: underline;
 }
 
@@ -883,27 +896,27 @@ a:hover {
 }
 
 .text-primary {
-  color: #2d3e50 !important;
+  color: #2d3333 !important;
 }
 
 .text-info {
-  color: #1bbc9b !important;
+  color: #2d3333!important;
 }
 
 .text-danger {
-  color: #e64c66 !important;
+  color: #c96000 !important;
 }
 
 .text-default {
-  color: #aeaeae !important;
+  color: #2d3333 !important;
 }
 
 .text-light {
-  color: #d9e9e8 !important;
+  color: #fdf4e7 !important;
 }
 
 .text-dark {
-  color: #1a1a1a !important;
+  color: #2d3333 !important;
 }
 
 .text-white {
@@ -915,28 +928,28 @@ a:hover {
 }
 
 .text-link {
-  color: #1b89bc !important;
+  color: #7faeb9 !important;
 }
 
 /* BACKGROUND UTILS */
 .bg-primary {
-  background-color: #2d3e50 !important;
+  background-color: #9fcdda !important;
 }
 
 .bg-info {
-  background-color: #1bbc9b !important;
+  background-color: #9fcdda !important;
 }
 
 .bg-danger {
-  background-color: #e64c66 !important;
+  background-color: #c96000 !important;
 }
 
 .bg-light {
-  background-color: #d9e9e8 !important;
+  background-color: #9fcdda !important;
 }
 
 .bg-dark {
-  background-color: #1a1a1a !important;
+  background-color: #9fcdda !important;
 }
 
 .bg-white {
@@ -948,7 +961,7 @@ a:hover {
 }
 
 .bg-link {
-  background-color: #1b89bc !important;
+  background-color: #9fcdda !important;
 }
 
 /* DISPLAY */
@@ -972,6 +985,8 @@ a:hover {
   display: flex !important;
 }
 
+/* Button attributes*/
+
 .btn {
   text-align: center;
   display: inline-block;
@@ -982,13 +997,13 @@ a:hover {
   border-radius: 0.3rem;
   border: 1px solid transparent;
   outline: none;
-  color: #1a1a1a;
-  background-color: #aeaeae;
+  color: #2d3333;
+  background-color: #9fcdda;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 .btn:hover {
-  background-color: #cecece;
+  background-color: #7faeb9;
 }
 
 .btn.btn-squared {
@@ -1012,53 +1027,53 @@ a:hover {
 }
 
 .btn.btn-primary {
-  background-color: #2d3e50;
-  color: #d9e9e8;
+  background-color: #d9f4fa;
+  color: #2d3333;
 }
 
 .btn.btn-primary:hover {
-  background-color: #57779a;
+  background-color: #7faeb9;
 }
 
 .btn.btn-danger {
-  background-color: #e64c66;
+  background-color: #c96000;
   color: #ffffff;
 }
 
 .btn.btn-danger:hover {
-  background-color: #ee8294;
+  background-color: #ffb000;
 }
 
 .btn.btn-info {
-  background-color: #1bbc9b;
-  color: #ffffff;
+  background-color: #d9f4fa;
+  color: #2d3333;
 }
 
 .btn.btn-info:hover {
-  background-color: #31e1bd;
+  background-color: #7faeb9;
 }
 
 .btn.btn-light {
   background-color: #d9e9e8;
-  color: #1a1a1a;
+  color: #2d3333;
 }
 
 .btn.btn-light:hover {
-  background-color: #84b8b4;
+  background-color: #7faeb9;
 }
 
 .btn.btn-dark {
-  background-color: #1a1a1a;
-  color: #d9e9e8;
+  background-color: #d9f4fa;
+  color: #2d3333;
 }
 
 .btn.btn-dark:hover {
-  background-color: #5f5f5f;
+  background-color: #7faeb9;
 }
 
 .btn.btn-white {
   background-color: #ffffff;
-  color: #1a1a1a;
+  color: #2d3333;
 }
 
 .btn.btn-white:hover {
@@ -1067,30 +1082,30 @@ a:hover {
 
 .btn.btn-black {
   background-color: #000000;
-  color: #ffffff;
+  color: #2d3333;
 }
 
 .btn.btn-black:hover {
-  background-color: #666666;
+  background-color: #7faeb9;
 }
 
 .btn.btn-link {
-  background-color: #1b89bc;
-  color: #ffffff;
+  background-color: #d9f4fa;
+  color: #2d3333;
 }
 
 .btn.btn-link:hover {
-  background-color: #31a9e1;
+  background-color: #7faeb9;
 }
 
 .card {
-  border: 1px solid #1a1a1a;
+  border: 1px solid #2d3333;
   margin-bottom: 1rem;
 }
 
 .card .card-header {
   padding: 0.375rem;
-  background-color: #2d3e50;
+  background-color: #9fcdda;
   color: #d9e9e8;
 }
 
@@ -1099,7 +1114,7 @@ a:hover {
 }
 
 .card .card-footer {
-  border-top: 1px solid #1a1a1a;
+  border-top: 1px solid #2d3333;
   padding: 0.375rem;
 }
 
