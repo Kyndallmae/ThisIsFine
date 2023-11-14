@@ -76,7 +76,7 @@ const Hurricain = () => {
                   onChange={handleChange}
                 />
                 <button
-                  className="btn btn-block btn-primary"
+                  className="btn btn-block btn-primary bg-dark text-white"
                   style={{ cursor: 'pointer' }}
                   type="submit"
                 >
