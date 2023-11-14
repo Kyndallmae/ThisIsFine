@@ -14,7 +14,8 @@ const Header = () => {
           <Link className="text-light" to="/">
             <h1 className="m-0">This Is Fine</h1>
           </Link>
-          <p className="m-0">An emergency preparedness guide for when things are not so fine!</p>
+          <p className="m-0">An emergency preparedness guide for when things are not so fine!
+                   Click on the emergency you would like to learn more about.</p>
         </div>
         <div>
           {Auth.loggedIn() ? (
@@ -28,11 +29,11 @@ const Header = () => {
             </>
           ) : (
             <>
-              <Link className="btn btn-lg btn-inf m-2" to="/login">
-                Login
+              <Link className="btn btn-lg btn-inf m-2" to="/tornado">
+                Tornados
               </Link>
-              <Link className="btn btn-lg btn-light m-2" to="/signup">
-                Signup
+              <Link className="btn btn-lg btn-light m-2" to="/hurricain">
+                Hurricains
               </Link>
             </>
           )}

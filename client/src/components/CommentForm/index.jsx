@@ -77,8 +77,8 @@ const CommentForm = ({ thoughtId }) => {
         </>
       ) : (
         <p>
-          You need to be logged in to share your thoughts. Please{' '}
-          <Link to="/login">login</Link> or <Link to="/signup">signup.</Link>
+         Click on the link below to learn about the emergency of your choice.{' '}
+          <Link to="/tornado">Tornados</Link> or <Link to="/hurricain">Hurricains.</Link>
         </p>
       )}
     </div>
