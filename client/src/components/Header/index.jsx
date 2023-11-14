@@ -12,7 +12,7 @@ const Header = () => {
       <div className="container flex-row justify-space-between-lg justify-center align-center">
         <div>
           <Link className="text-primary" to="/">
-            <h1 className="m-0 text-danger">This Is Fine</h1>
+            <h1 className="m-0 ">This Is Fine</h1>
           </Link>
           <p className="m-0">An emergency preparedness guide for when things are not so fine!
                    Click on the emergency you would like to learn more about.</p>
@@ -29,10 +29,10 @@ const Header = () => {
             </>
           ) : (
             <>
-              <Link className="btn btn-lg btn-light m-2 text-danger" to="/tornado">
+              <Link className="btn btn-lg btn-light m-2" to="/tornado">
                 Tornados
               </Link>
-              <Link className="btn btn-lg btn-light m-2 text-danger" to="/hurricain">
+              <Link className="btn btn-lg btn-light m-2" to="/hurricain">
                 Hurricains
               </Link>
             </>

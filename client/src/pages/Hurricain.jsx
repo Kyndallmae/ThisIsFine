@@ -6,95 +6,35 @@ import { ADD_USER } from '../utils/mutations';
 
 import Auth from '../utils/auth';
 
-const Hurricain = () => {
-  const [formState, setFormState] = useState({
-    username: '',
-    email: '',
-    password: '',
-  });
-  const [addUser, { error, data }] = useMutation(ADD_USER);
-
-  const handleChange = (event) => {
-    const { name, value } = event.target;
-
-    setFormState({
-      ...formState,
-      [name]: value,
-    });
-  };
-
-  const handleFormSubmit = async (event) => {
-    event.preventDefault();
-    console.log(formState);
-
-    try {
-      const { data } = await addUser({
-        variables: { ...formState },
-      });
-
-      Auth.login(data.addUser.token);
-    } catch (e) {
-      console.error(e);
-    }
-  };
-
   return (
     <main className="flex-row justify-center mb-4">
       <div className="col-12 col-lg-10">
         <div className="card">
-          <h4 className="card-header bg-dark text-light p-2">Sign Up</h4>
-          <div className="card-body">
-            {data ? (
-              <p>
-                Success! You may now head{' '}
-                <Link to="/">back to the homepage.</Link>
-              </p>
-            ) : (
-              <form onSubmit={handleFormSubmit}>
-                <input
-                  className="form-input"
-                  placeholder="Your username"
-                  name="username"
-                  type="text"
-                  value={formState.name}
-                  onChange={handleChange}
-                />
-                <input
-                  className="form-input"
-                  placeholder="Your email"
-                  name="email"
-                  type="email"
-                  value={formState.email}
-                  onChange={handleChange}
-                />
-                <input
-                  className="form-input"
-                  placeholder="******"
-                  name="password"
-                  type="password"
-                  value={formState.password}
-                  onChange={handleChange}
-                />
-                <button
-                  className="btn btn-block btn-primary bg-dark text-white"
-                  style={{ cursor: 'pointer' }}
-                  type="submit"
-                >
-                  Submit
-                </button>
-              </form>
-            )}
-
-            {error && (
-              <div className="my-3 p-3 bg-danger text-white">
-                {error.message}
-              </div>
-            )}
+          <h4 className="card-header bg-dark text-white p-2">Tornadoes</h4>
+          <div className="card-body text-dark">Tornadoes can be deadly, so watch out! Follow this link to learn more or check your local weather down below.</div>
+        </div>
+      </div>
+      <div className="col-12 col-lg-10">
+        <div className="card disply-flex mb-4">
+          <h4 className="card-header bg-dark text-white p-2">What to do in case of a tornado.</h4>
+          <div className="flex-box justify-left flex-row text-dark">
+            <ol>
+              <li>Take shelter in a room with no outward facing walls.</li>
+              <li>Have a flashlight and fresh water with you.</li>
+              <li>Do not leave that spot until you are absolutly sure the storm is over.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div className="col-12 col-lg-10">
+        <div className="card disply-flex mb-4">
+          <h4 className="card-header bg-dark text-white p-2">Check the Weather in Your Area.</h4>
+          <div className="flex-box justify-left flex-row text-dark">
           </div>
         </div>
       </div>
     </main>
   );
-};
+;
 
 export default Hurricain;
