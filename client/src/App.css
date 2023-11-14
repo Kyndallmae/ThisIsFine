@@ -12,6 +12,20 @@
   /* 2 */
 }
 
+.container {
+  display: flex; /* Use Flexbox to create a two-column layout */
+  justify-content: space-between; /* Space between the columns */
+}
+
+.column {
+  width: 48%; /* Adjust the width as needed */
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 5px;
+}
+
+
+
 /* Sections
    ========================================================================== */
 /**
