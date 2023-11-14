@@ -10,7 +10,7 @@ const Header = () => {
   };
   return (
     <header className="bg-primary text-primary mb-4 py-3 flex-row align-center">
-      <div className="container flex-row justify-space-between-lg justify align-center">
+      <div className="container flex-row justify-space-between-lg justify-center align-center">
           <img src={thisIsFine}></img> 
         </div>
         <div>
@@ -19,7 +19,6 @@ const Header = () => {
           <Link className="text-primary" to="/">
 
             <h1 className="m-0 text-danger">This Is Fine</h1>
-
           </Link>
           <p className="m-0">An emergency preparedness guide for when things are not so fine!
                    Click on the emergency you would like to learn more about.</p>
@@ -45,7 +44,6 @@ const Header = () => {
             </>
           )}
         </div>
-      </div>
     </header>
   );
 };
