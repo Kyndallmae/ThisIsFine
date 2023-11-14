@@ -3,7 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from './App.jsx';
 import Home from './pages/Home';
-import Hurricain from './pages/Hurricain';
+import Hurricane from './pages/Hurricane';
 import Tornado from './pages/Tornado';
 import SingleThought from './pages/SingleThought';
 import Profile from './pages/Profile';
@@ -22,8 +22,8 @@ const router = createBrowserRouter([
         path: '/tornado',
         element: <Tornado />
       }, {
-        path: '/hurricain',
-        element: <Hurricain />
+        path: '/Hurricane',
+        element: <Hurricane />
       }, {
         path: '/profiles/:username',
         element: <Profile />
