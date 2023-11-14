@@ -1,5 +1,5 @@
 import { useState } from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
 
 import { ADD_THOUGHT } from '../../utils/mutations';
@@ -90,6 +90,9 @@ const ThoughtForm = () => {
         </>
       ) : (
         <p>
+
+          Or search weather in your local area! Please {' '}
+          <Link to="./tornado">tornados</Link> or <Link to="./hurricain">hurricains</Link> to comment
 
         </p>
       )}
