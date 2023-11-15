@@ -90,7 +90,7 @@ const ThoughtForm = () => {
       ) : (
 
         <p>
-          You need to be logged in to pot your tip. Please{' '}
+          You need to be logged in to post your tip. Please{' '}
           <Link className="text-danger" to="/login">login</Link> or <Link className="text-danger" to="/signup">signup.</Link>
         </p>
       )}
