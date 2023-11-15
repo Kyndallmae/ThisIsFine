@@ -1,10 +1,9 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-
 import { useMutation } from '@apollo/client';
 import { ADD_USER } from '../utils/mutations';
-
 import Auth from '../utils/auth';
+import Weather from '../components/Weather';
 
 const Hurricane = () => {
   const [formState, setFormState] = useState({
@@ -62,6 +61,7 @@ const Hurricane = () => {
         <div className="card disply-flex mb-4">
           <h4 className="card-header bg-dark text-white p-2">Check the Weather in Your Area.</h4>
           <div className="flex-box justify-left flex-row text-dark">
+          <Weather />
           </div>
         </div>
       </div>
