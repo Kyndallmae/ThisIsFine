@@ -21,7 +21,7 @@ const Header = () => {
 
             <h1 className="m-0 text-danger">This Is Fine</h1>
 
-            <h1 className="m-0">This Is Fine</h1>
+            
           </Link>
           <p className="m-0">An emergency preparedness guide for when things are not so fine!
                    Click on the emergency you would like to learn more about.</p>
