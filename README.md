@@ -36,7 +36,7 @@ SO THAT I can be as prepared and safe as possible.
 
 # Acceptance Criteria
 
-GIVEN I am looking for emergency and natural disaster information WHEN I open the app/link/website THEN I can pick a natural disaster on the homepage WHEN I hit enter THEN the information is displayes WHEN I want to check weather in my area THEN i can enter my location and WHEN i hot enter THEN the local weather is generated and displayed that matches the selected criteria.
+GIVEN I am looking for emergency and natural disaster information WHEN I open the app/link/website THEN I can pick a natural disaster on the homepage WHEN I hit enter THEN the information is displayed WHEN I want to check weather in my area THEN I can enter my location and WHEN I hit enter THEN the local weather is generated and displayed that matches the selected criteria.
 
 # Links
 
