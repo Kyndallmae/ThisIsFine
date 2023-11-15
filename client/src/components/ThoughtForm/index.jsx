@@ -90,8 +90,10 @@ const ThoughtForm = () => {
       ) : (
 
         <p>
-          You need to be logged in to post your tip. Please{' '}
-          <Link className="text-danger" to="/login">login</Link> or <Link className="text-danger" to="/signup">signup.</Link>
+
+          Or search weather in your local area! Please {' '}
+          <Link to="./tornado">tornados</Link> or <Link to="./hurricane">Hurricanes</Link> to comment
+
         </p>
       )}
     </div>

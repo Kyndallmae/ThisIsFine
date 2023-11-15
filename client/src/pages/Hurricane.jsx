@@ -5,6 +5,7 @@ import { useMutation } from '@apollo/client';
 import { ADD_USER } from '../utils/mutations';
 
 import Auth from '../utils/auth';
+import Weather from '../components/Weather/index';
 
 const Hurricane = () => {
   const [formState, setFormState] = useState({
@@ -51,8 +52,10 @@ const Hurricane = () => {
           <h4 className="card-header bg-dark text-white p-2">What to do in case of a hurricane.</h4>
           <div className="flex-box justify-left flex-row text-dark">
             <ol>
-              <li>Take shelter in a room with no outward facing walls or evacute if instructed to do so.</li>
+              <li>Take shelter in a room with no windows or evacute if instructed to do so.</li>
+              <li>Avoid driving if not evacuating.</li>
               <li>Have a flashlight and fresh water with you.</li>
+              <li>Move to higher ground before flooding.</li>
               <li>Do not leave that spot until you are absolutly sure the storm is over.</li>
             </ol>
           </div>
@@ -62,6 +65,7 @@ const Hurricane = () => {
         <div className="card disply-flex mb-4">
           <h4 className="card-header bg-dark text-white p-2">Check the Weather in Your Area.</h4>
           <div className="flex-box justify-left flex-row text-dark">
+          <Weather />
           </div>
         </div>
       </div>
