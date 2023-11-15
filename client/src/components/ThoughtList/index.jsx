@@ -7,7 +7,7 @@ const ThoughtList = ({
   showUsername = true,
 }) => {
   if (!thoughts.length) {
-    return <h3>No Thoughts Yet</h3>;
+    return <h3 className="text-dark">No Thoughts Yet</h3>;
   }
 
   return (
@@ -16,7 +16,7 @@ const ThoughtList = ({
       {thoughts &&
         thoughts.map((thought) => (
           <div key={thought._id} className="card mb-3">
-            <h4 className="card-header bg-primary text-light p-2 m-0">
+            <h4 className="card-header bg-primary text-dark p-2 m-0">
               {showUsername ? (
                 <Link
                   className="text-light"

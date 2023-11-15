@@ -13,14 +13,14 @@ const ThoughtForm = () => {
   const [characterCount, setCharacterCount] = useState(0);
 
   const [addThought, { error }] = useMutation
-  (ADD_THOUGHT, {
-    refetchQueries: [
-      QUERY_THOUGHTS,
-      'getThoughts',
-      QUERY_ME,
-      'me'
-    ]
-  });
+    (ADD_THOUGHT, {
+      refetchQueries: [
+        QUERY_THOUGHTS,
+        'getThoughts',
+        QUERY_ME,
+        'me'
+      ]
+    });
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
@@ -55,9 +55,8 @@ const ThoughtForm = () => {
       {Auth.loggedIn() ? (
         <>
           <p
-            className={`m-0 ${
-              characterCount === 280 || error ? 'text-danger' : ''
-            }`}
+            className={`m-0 ${characterCount === 280 || error ? 'text-danger' : ''
+              }`}
           >
             Character Count: {characterCount}/280
           </p>
@@ -89,15 +88,19 @@ const ThoughtForm = () => {
           </form>
         </>
       ) : (
+
         <p>
 
           Or search weather in your local area! Please {' '}
-          <Link to="./tornado">tornados</Link> or <Link to="./Hurricane">Hurricanes</Link> to comment
+          <Link to="./tornado">tornados</Link> or <Link to="./hurricane">Hurricanes</Link> to comment
 
         </p>
       )}
     </div>
   );
+
 };
 
 export default ThoughtForm;
+
+

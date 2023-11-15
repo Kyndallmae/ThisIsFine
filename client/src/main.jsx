@@ -8,6 +8,9 @@ import Tornado from './pages/Tornado';
 import SingleThought from './pages/SingleThought';
 import Profile from './pages/Profile';
 import ErrorPage from './pages/ErrorPage';
+import Login from './pages/Login.jsx';
+import Signup from './pages/Signup.jsx';
+
 
 const router = createBrowserRouter([
   {
@@ -22,7 +25,7 @@ const router = createBrowserRouter([
         path: '/tornado',
         element: <Tornado />
       }, {
-        path: '/Hurricane',
+        path: '/hurricane',
         element: <Hurricane />
       }, {
         path: '/profiles/:username',
@@ -33,7 +36,13 @@ const router = createBrowserRouter([
       }, {
         path: '/thoughts/:thoughtId',
         element: <SingleThought />
-      }
+      }, {
+        path: '/login',
+        element: <Login />
+      }, {
+        path: '/signup',
+        element: <Signup />
+      },
     ]
   },
 ]);

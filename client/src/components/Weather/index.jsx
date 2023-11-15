@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
+// const APIKey = process.env.WEATHER_API_KEY || '';
 
-const APIKey = '67a0cbd93605189d6b08a86935fedbd8'
+const APIKey = '67a0cbd93605189d6b08a86935fedbd8' /* TODO: API Keys should always live in either a DB or the .ENV file */
 
 function Weather() {
     const [data, setData] = useState(null);

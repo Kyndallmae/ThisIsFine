@@ -8,6 +8,7 @@ const Header = () => {
     event.preventDefault();
     Auth.logout();
   };
+
   return (
     <header className="bg-primary text-primary mb-4 py-3 flex-row align-center">
       <div className="container flex-row justify-space-between-lg justify-center align-center">
@@ -38,15 +39,37 @@ const Header = () => {
               <Link className="btn btn-lg btn-light m-2 text-danger" to="/tornado">
                 Tornados
               </Link>
-              <Link className="btn btn-lg btn-light m-2" to="/Hurricane">
+              <Link className="btn btn-lg btn-light m-2 text-danger" to="/hurricane">
                 Hurricanes
               </Link>
             </>
           )}
         </div>
       </div>
-    </header>
+      <div>
+          {Auth.loggedIn() ? (
+            <>
+              <Link className="btn btn-lg btn-info m-2" to="/me">
+                {Auth.getProfile().data.username}'s profile
+              </Link>
+              <button className="btn btn-lg btn-light m-2" onClick={logout}>
+                Logout
+              </button>
+            </>
+          ) : (
+            <>
+              <Link className="btn btn-lg btn-info m-2" to="/login">
+                Login
+              </Link>
+              <Link className="btn btn-lg btn-light m-2" to="/signup">
+                Signup
+              </Link>
+            </>
+          )}
+        </div>
+    </header >
   );
 };
+
 
 export default Header;

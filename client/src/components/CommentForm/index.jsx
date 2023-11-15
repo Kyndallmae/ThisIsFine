@@ -78,7 +78,7 @@ const CommentForm = ({ thoughtId }) => {
       ) : (
         <p>
          Click on the link below to learn about the emergency of your choice.{' '}
-          <Link to="/tornado">Tornados</Link> or <Link to="/Hurricane">Hurricanes.</Link>
+          <Link to="/tornado">Tornadoes</Link> or <Link to="/hurricane">Hurricanes.</Link>
         </p>
       )}
     </div>
