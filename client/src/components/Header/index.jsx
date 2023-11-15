@@ -16,7 +16,7 @@ const Header = () => {
           <img src={thisIsFine}></img>
         </div>
         <div>
-          <Link className="text-light" to="/"></Link> 
+          <Link className="text-light" to="/"></Link>
 
           <Link className="text-primary" to="/">
 
@@ -24,7 +24,7 @@ const Header = () => {
           </Link>
 
           <p className="m-0">An emergency preparedness guide for when things are not so fine!
-                   Click on the emergency you would like to learn more about.</p>
+            Click on the emergency you would like to learn more about.</p>
         </div>
         <div>
           {Auth.loggedIn() ? (
@@ -48,8 +48,30 @@ const Header = () => {
           )}
         </div>
       </div>
-    </header>
+      <div>
+          {Auth.loggedIn() ? (
+            <>
+              <Link className="btn btn-lg btn-info m-2" to="/me">
+                {Auth.getProfile().data.username}'s profile
+              </Link>
+              <button className="btn btn-lg btn-light m-2" onClick={logout}>
+                Logout
+              </button>
+            </>
+          ) : (
+            <>
+              <Link className="btn btn-lg btn-info m-2" to="/login">
+                Login
+              </Link>
+              <Link className="btn btn-lg btn-light m-2" to="/signup">
+                Signup
+              </Link>
+            </>
+          )}
+        </div>
+    </header >
   );
 };
+
 
 export default Header;
