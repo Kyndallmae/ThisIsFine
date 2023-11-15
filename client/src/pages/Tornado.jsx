@@ -23,8 +23,10 @@ const Tornado = (props) => {
           <h4 className="card-header bg-dark text-white p-2">What to do in case of a tornado.</h4>
           <div className="flex-box justify-left flex-row text-dark">
             <ol>
-              <li>Take shelter in a room with no outward facing walls.</li>
+              <li>Take shelter in an interior room with no windows.</li>
+              <li>Move to higher ground before flooding.</li>
               <li>Have a flashlight and fresh water with you.</li>
+              <li>Avoid driving.</li>
               <li>Do not leave that spot until you are absolutly sure the storm is over.</li>
             </ol>
           </div>
