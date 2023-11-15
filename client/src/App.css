@@ -49,6 +49,7 @@ main {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
+  text-align: center;
 }
 
 /* Grouping content
@@ -152,8 +153,15 @@ sup {
 /**
  * Remove the border on images inside links in IE 10.
  */
-img {
+.img {
+  text-align: center;
   border-style: none;
+  display:block;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  
+  
 }
 
 /* Forms
@@ -988,6 +996,7 @@ a:hover {
 /* Button attributes*/
 
 .btn {
+  
   text-align: center;
   display: inline-block;
   padding: 0.5rem 1.2rem;
@@ -1021,6 +1030,7 @@ a:hover {
 }
 
 .btn.btn-block {
+  
   width: 100%;
   display: block;
   text-align: center;
@@ -1036,6 +1046,7 @@ a:hover {
 }
 
 .btn.btn-danger {
+
   background-color: #c96000;
   color: #ffffff;
 }
