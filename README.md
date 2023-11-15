@@ -10,11 +10,11 @@ An app that educates users on emergency preparedness and provides resources for 
 
 # Challenges
 
-With this project, we recognized that the vision we wanted to fully realize would require more time, research and more refined skills. We faced difficulties such as debugging, branches, and overall technical challenges. As a team, our schedules varied so communication was difficult.
+With this project, we recognized that the vision we wanted to fully realize would require more time, research and more refined skills. We faced difficulties such as debugging, branches, and overall technical challenges with VS Code. As a team, our schedules varied so communication was difficult.
 
 # Future Development
 
-We would like to add more pages with different natural disasters adn resources. Also, set up a donation collection to keep the sight up and running. As well as create a community board where people can connect and share advice and other resources.
+We would like to add more pages with different natural disasters and resources. Also, set up a donation collection to keep the sight up and running. As well as create a community board where people can connect and share advice and other resources.
 
 # Motivation
 
@@ -35,6 +35,8 @@ I WANT a quick and easy guide that informs me of what to do in different emergen
 SO THAT I can be as prepared and safe as possible.
 
 # Acceptance Criteria
+
+GIVEN I am looking for emergency and natural disaster information WHEN I open the app/link/website THEN I can pick a natural disaster on the homepage WHEN I hit enter THEN the information is displayes WHEN I want to check weather in my area THEN i can enter my location and WHEN i hot enter THEN the local weather is generated and displayed that matches the selected criteria.
 
 # Links
 
