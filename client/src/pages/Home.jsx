@@ -18,7 +18,7 @@ const Home = () => {
         >
           <ThoughtForm />
         </div>
-        <div className="col-12 col-md-8 mb-3">
+        <div className="col-12 col-md-8 mb-3 text-dark">
           {loading ? (
             <div>Loading...</div>
           ) : (
