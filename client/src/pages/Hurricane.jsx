@@ -52,10 +52,10 @@ const Hurricane = () => {
           <h4 className="card-header bg-dark text-white p-2">What to do in case of a hurricane.</h4>
           <div className="flex-box justify-left flex-row text-dark">
             <ol>
-              <li>Take shelter in the lowest room with no outward facing walls or evacute if instructed to do so.</li>
-              <li>If you are in a car, trailer, or mobile home, find a tornado shelter.</li>
+              <li>Take shelter in a room with no windows or evacute if instructed to do so.</li>
+              <li>Avoid driving if not evacuating.</li>
               <li>Have a flashlight and fresh water with you.</li>
-              <li>Protect your head and cover your body with a blanket or matress.</li>
+              <li>Move to higher ground before flooding.</li>
               <li>Do not leave that spot until you are absolutly sure the storm is over.</li>
             </ol>
           </div>
