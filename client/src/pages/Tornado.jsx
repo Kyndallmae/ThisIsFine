@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
 import { LOGIN_USER } from '../utils/mutations';
+import Weather from '../components/Weather';
 
 
 const Tornado = (props) => {
@@ -33,6 +34,7 @@ const Tornado = (props) => {
         <div className="card disply-flex mb-4">
           <h4 className="card-header bg-dark text-white p-2">Check the Weather in Your Area.</h4>
           <div className="flex-box justify-left flex-row text-dark">
+            <Weather />
           </div>
         </div>
       </div>
