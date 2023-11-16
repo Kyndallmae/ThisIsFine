@@ -40,5 +40,5 @@ GIVEN I am looking for emergency and natural disaster information WHEN I open th
 
 # Links
 
-Deployed:
+Deployed:https://github.com/Kyndallmae/ThisIsFine.git
 Heroku:
