@@ -17,7 +17,7 @@ function Weather() {
 
     return(
         <div>
-            City: <input placeholder='Dallas'></input>
+            City: <input placeholder='Search'></input>
             {/* IF logic to hide the below until the submit button is clicked. */}
             {data ? <pre>{JSON.stringify(data, null, 2)}</pre> : 'Loading...'}
         </div>
