@@ -65,9 +65,12 @@ const Hurricane = () => {
         <div className="card disply-flex mb-4">
           <h4 className="card-header bg-dark text-white p-2">Check the Weather in Your Area.</h4>
           <div className="flex-box justify-left flex-row text-dark">
+            <Weather>
+            </Weather>
           </div>
         </div>
       </div>
+
     </main>
   );
   };
