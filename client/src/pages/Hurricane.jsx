@@ -43,7 +43,7 @@ const Hurricane = () => {
     <main className="flex-row justify-center mb-4">
       <div className="col-12 col-lg-10">
         <div className="card">
-          <h4 className="card-header bg-dark text-white p-2">Huricanes</h4>
+          <h4 className="card-header bg-dark text-white p-2">Hurricanes</h4>
           <div className="card-body text-dark">Hurricanes occur mostly in states that border the ocean, but have been known to travel farther inland.</div>
         </div>
       </div>
