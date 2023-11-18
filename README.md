@@ -28,7 +28,8 @@ I WANT a quick and easy guide that informs me of what to do in different emergen
 SO THAT I can be as prepared and safe as possible.
 
 #Acceptance Criteria
+GIVEN I am looking for emergency and natural disaster information WHEN I open the app/link/website THEN I can pick a natural disaster on the homepage WHEN I hit enter THEN the information is displayed WHEN I want to check weather in my area THEN I can enter my location and WHEN I hit enter THEN the local weather is generated and displayed that matches the selected criteria.
 
 #Links
-Deployed:
-Heroku:
+Deployed:https://github.com/Kyndallmae/ThisIsFine.git
+Heroku:https://thisisfineep-1098472d7a52.herokuapp.com/
